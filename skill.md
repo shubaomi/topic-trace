@@ -27,6 +27,12 @@
 读取 steps/step5_image_prompt.md，基于Step2-3的文案生成封面和配图prompt。
 输出：封面prompt + 配图prompt
 
+### Step 6: 保存输出
+将最终输出保存为markdown文件到当前目录的 `topic-trace-outputs` 文件夹：
+1. 检查 `topic-trace-outputs` 文件夹是否存在，如不存在则创建
+2. 文件命名格式：`{热点话题关键词}-{日期}.md`
+3. 告知用户完整的保存路径
+
 ## 最终输出格式
 按照以下结构组织所有内容，以markdown格式输出：
 
@@ -75,6 +81,12 @@
 ---
 
 *本文案由 topic-trace 自动生成，素材来源已交叉验证，仅供参考。*
+
+## 输出文件
+
+**保存位置：** `[当前目录]/topic-trace-outputs/[文件名].md`
+
+示例：`E:\Projects\Skills\topic-trace\topic-trace-outputs\喊话齐先生-20260507.md`
 
 ## 用户输入
 [热点话题]
