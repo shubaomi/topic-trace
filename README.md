@@ -68,6 +68,19 @@ topic-trace/
 3. **去人味**：消除AI机械化表达，更自然流畅
 4. **多平台适配**：转化为小红书风格内容
 5. **视觉素材**：生成封面和配图的AI图像Prompt
+6. **保存输出**：自动保存为 md 文件到 `topic-trace-outputs` 文件夹
+
+## 输出文件
+
+生成的素材会自动保存到当前目录的 `topic-trace-outputs` 文件夹：
+
+**保存位置：** `[当前目录]/topic-trace-outputs/[热点话题-日期].md`
+
+**示例：**
+```
+/topic-trace 喊话齐先生
+→ 保存到：topic-trace-outputs/喊话齐先生-20260507.md
+```
 
 ## 设计原则
 
@@ -83,6 +96,7 @@ topic-trace/
 
 ## 更新日志
 
+- v1.2: 添加输出保存功能，生成内容自动保存为 md 文件
 - v1.1: 添加 WebSearch 失败时的 last30days fallback 机制，提升网络不稳定环境下的可用性
 - v1.0: 初始版本
 
